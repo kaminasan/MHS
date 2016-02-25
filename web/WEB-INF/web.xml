@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <description>This is the SGH English homepage for Minamata HighSchool</description>
+    <display-name>MHS</display-name>
+    <context-param>
+        <description>Store the app name.</description>
+        <param-name>appName</param-name>
+        <param-value>Minamata High School</param-value>
+    </context-param>
+    <servlet>
+        <description>Controller that returns Recent Posts</description>
+        <servlet-name>RecentPostController</servlet-name>
+        <servlet-class>com.kam.cms.controllers.post.RecentPostsController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RecentPostsJSP</servlet-name>
+        <jsp-file>/WEB-INF/recentposts.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <description>Home Page</description>
+        <servlet-name>Home</servlet-name>
+        <jsp-file>/home.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <description>This will be the school history file.</description>
+        <servlet-name>HistoryServlet</servlet-name>
+        <jsp-file>/WEB-INF/schoolhistory.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>Principal Greeting</servlet-name>
+        <jsp-file>/WEB-INF/principalmessage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecentPostController</servlet-name>
+        <url-pattern>/recent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RecentPostsJSP</servlet-name>
+        <url-pattern>/recentposts</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HistoryServlet</servlet-name>
+        <url-pattern>/school-history</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Principal Greeting</servlet-name>
+        <url-pattern>/principal-greeting</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>landing.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/Error/Error404.jsp</location>
+    </error-page>
+</web-app>
