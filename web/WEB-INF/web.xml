@@ -8,15 +8,6 @@
         <param-value>Minamata High School</param-value>
     </context-param>
     <servlet>
-        <description>Controller that returns Recent Posts</description>
-        <servlet-name>RecentPostController</servlet-name>
-        <servlet-class>com.kam.cms.controllers.post.RecentPostsController</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>RecentPostsJSP</servlet-name>
-        <jsp-file>/WEB-INF/recentposts.jsp</jsp-file>
-    </servlet>
-    <servlet>
         <description>Home Page</description>
         <servlet-name>Home</servlet-name>
         <jsp-file>/home.jsp</jsp-file>
@@ -30,14 +21,11 @@
         <servlet-name>Principal Greeting</servlet-name>
         <jsp-file>/WEB-INF/principalmessage.jsp</jsp-file>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>RecentPostController</servlet-name>
-        <url-pattern>/recent</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>RecentPostsJSP</servlet-name>
-        <url-pattern>/recentposts</url-pattern>
-    </servlet-mapping>
+    <servlet>
+        <description>A contact form to contact us</description>
+        <servlet-name>Contact</servlet-name>
+        <jsp-file>/WEB-INF/contact.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Home</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -49,6 +37,10 @@
     <servlet-mapping>
         <servlet-name>Principal Greeting</servlet-name>
         <url-pattern>/principal-greeting</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Contact</servlet-name>
+        <url-pattern>/contact</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
