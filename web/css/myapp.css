@@ -49,6 +49,11 @@ textarea{
     margin-top: 0;
 }
 
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{ //We needed to fix the colors of the links under the dropdown menu
+    color:white;
+    
+}
+
 #homeLink{
     color:white;
     font-family: 'Lobster', cursive;
