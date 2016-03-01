@@ -10,7 +10,7 @@
     <servlet>
         <description>Home Page</description>
         <servlet-name>Home</servlet-name>
-        <jsp-file>/home.jsp</jsp-file>
+        <jsp-file>/WEB-INF/post-view.jsp</jsp-file>
     </servlet>
     <servlet>
         <description>This will be the school history file.</description>
