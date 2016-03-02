@@ -33,7 +33,22 @@
                 This is a sample post summary to show<br>
                 What exactly our post could look like when we put in a small summary next to it. 
                 </div>
+                
             </div>
+                <div class="postRow row">
+                   <div class="col-lg-8"> <p>Here is the actual description of what happened on the day <br>${post.postContent}
+                     Here is the actual description of what happened on the day <br>
+                      Here is the actual description of what happened on the day <br>
+                       Here is the actual description of what happened on the day <br>
+                        Here is the actual description of what happened on the day <br>
+                         Here is the actual description of what happened on the day <br>
+                         </p>
+                </div>
+                     <div class="col-lg-4">
+                         Categories: ${post.postCategories}
+                         CATEGORY 1 / CATEGORY 2 / CATEGORY 3
+                     </div>
+                </div>
          <%@include file="/WEB-INF/fragments/footer.jsp" %>
      
          </div>
