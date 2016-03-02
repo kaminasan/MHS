@@ -19,7 +19,21 @@
                 <div class="row title-row">
                     <header><h1 class="text-center"> TEST POST TITLE ${post.postTitle}</h1></header>
                 </div>
-            
+                
+                <div class="postRow row">
+                <div class="col-lg-6">
+                    <img src="Images/post1.JPG" class="img-responsive">
+                </div>
+                <div class="col-lg-6 ">${postSummary} This is a sample post summary to show<br>
+                What exactly our post could look like when we put in a small summary next to it. 
+                This is a sample post summary to show<br>
+                What exactly our post could look like when we put in a small summary next to it. 
+                This is a sample post summary to show<br>
+                What exactly our post could look like when we put in a small summary next to it. 
+                This is a sample post summary to show<br>
+                What exactly our post could look like when we put in a small summary next to it. 
+                </div>
+            </div>
          <%@include file="/WEB-INF/fragments/footer.jsp" %>
      
          </div>

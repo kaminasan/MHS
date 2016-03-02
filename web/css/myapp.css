@@ -49,9 +49,9 @@ textarea{
     margin-top: 0;
 }
 
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{ //We needed to fix the colors of the links under the dropdown menu
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
     color:white;
-    
+    font-size: 1.2em;
 }
 
 #homeLink{
@@ -118,7 +118,8 @@ textarea{
 }
 .postRow{
     background-color: rgba(42, 46, 47, 0.75);
-    margin-top: 10px;
+   padding-bottom: 15px;
+    color: white;
 }
 
 .title-row{
