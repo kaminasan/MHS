@@ -13,7 +13,7 @@ html{
 
 }
 body{
-    
+    color:white;
   background:
      linear-gradient(
       rgba(0, 0, 0, 0.35), 
@@ -51,12 +51,19 @@ textarea{
 
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
     color:white;
-    font-size: 1.2em;
+    font-size: 1.0em;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover{
+    color:#d0e9c6;
+    
+    background-color: rgba(52, 224, 166, 0.83);
 }
 
 #homeLink{
     color:white;
     font-family: 'Lobster', cursive;
+   
 }
 
 #historyContainer{
