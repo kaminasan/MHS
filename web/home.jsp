@@ -7,14 +7,16 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
+
 <html>
     <head><%@include file="/WEB-INF/headsection.jsp" %>
         <title>Minamata HS Home</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     </head>
 
     <body>
         <%@include file="/WEB-INF/fragments/navsection.jsp" %>
-        <div class="container-fluid">
+        <div class="container-fluid" ng-app="">
             <div id="jumbotronRow" class="container">
                    
                        
@@ -85,7 +87,7 @@
                     
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 post">
-                     <div class=""><h3 class="page-header">Industrial Field Trip</h3></div>
+                     <div class=""><h3 class="page-header">Field Work Trip</h3></div>
                       <div class="col-xs-6 col-md-6"><img class="img-responsive" src="Images/post2.JPG"></div>
                     <div class="col-xs-6 col-md-6 "><p>Our second year Industrial students went out into the field for a lecture, and a couple hours of
                                                         hands on work to get a feel for everyday activities in the field.</p></div>
@@ -104,6 +106,7 @@
             </div>
             <div class="container"><%@include file="/WEB-INF/fragments/footer.jsp"%></div>
                </div>
+              
         <!-- Container end -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
