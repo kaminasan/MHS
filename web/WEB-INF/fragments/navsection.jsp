@@ -24,7 +24,7 @@
                         <li><a href="#" class=""><span class="glyphicon glyphicon-globe"></span> International</a></li>
                         <li><c:choose>
                                 <c:when test="${not empty user}"><a href="<c:url value="/logout"></c:url>"><span class="glyphicon glyphicon-log-out"></span> Logout</a></c:when>
-                                <c:otherwise><a href="<c:url value="/login"></c:url>"> <span class="glyphicon glyphicon-log-in"></span> Login</a></c:otherwise>
+                                <c:otherwise><a href="#" data-toggle="modal" data-target="#loginModal"> <span class="glyphicon glyphicon-log-in"></span> Login</a></c:otherwise>
                             </c:choose></li>
                     </ul>
                 </div>

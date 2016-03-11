@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<div class="modal fade" role="dialog">
+<div class="modal fade" id="loginModal" role="dialog">
     
     <div class="modal-dialog">
         <div class="modal-content">
