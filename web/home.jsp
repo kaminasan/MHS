@@ -105,6 +105,7 @@
                
             </div>
             <div class="container"><%@include file="/WEB-INF/fragments/footer.jsp"%></div>
+            <%@include file="/WEB-INF/fragments/loginmodal.jsp"%>
                </div>
               
         <!-- Container end -->

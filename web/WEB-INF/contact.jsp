@@ -51,6 +51,7 @@
                
                
                  <%@include file="/WEB-INF/fragments/footer.jsp" %>
+                 <%@include file="/WEB-INF/fragments/loginmodal.jsp"%>
              </div>
              
              

@@ -129,6 +129,9 @@ textarea{
     color: white;
 }
 
+.modal{
+    color:black;
+}
 .title-row{
     background-color: rgba(42, 46, 47, 0.75);
     margin-top:50px;

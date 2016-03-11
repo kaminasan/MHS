@@ -54,6 +54,7 @@
             </div>
 
 <%@include file="/WEB-INF/fragments/footer.jsp" %>
+<%@include file="/WEB-INF/fragments/loginmodal.jsp"%>
         </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
