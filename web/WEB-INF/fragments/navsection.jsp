@@ -1,8 +1,3 @@
-<%-- 
-    Document   : navsection
-    Created on : Nov 13, 2015, 9:06:29 AM
-    Author     : teacher
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -27,6 +22,10 @@
                         </li>
                         <li><a href="<c:url value="/contact"></c:url>"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
                         <li><a href="#" class=""><span class="glyphicon glyphicon-globe"></span> International</a></li>
+                        <li><c:choose>
+                                <c:when test="${not empty user}"><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></c:when>
+                                <c:otherwise><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></c:otherwise>
+                            </c:choose></li>
                     </ul>
                 </div>
             </div>
