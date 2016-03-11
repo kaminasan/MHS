@@ -20,6 +20,7 @@
                 <div class="form-group">
                 Username:<input class="form-control" type="text" required>
                 Password:<input class="form-control" type="password" required>
+                <br>
                 <button class="btn btn-primary " type="submit" data-dismiss="modal">Submit</button>
             </div>
                 </form>
