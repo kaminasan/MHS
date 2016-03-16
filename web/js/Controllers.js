@@ -14,11 +14,12 @@ LoginApp.controller('loginController', ['$scope', '$http',
             $http({
                 method: 'POST',
                 url: 'login',
-                data: $scope.loginData,
+                data: $.param($scope.loginData), //this is to serialize the object as params param1=blah&param2=blahblah
                 headers: {'Content-Type' : 'application/x-www-form-urlencoded'}
             }).then(function (response){
                 console.log("We succeeded!");
             console.log(response);
+            console.log("Response data is: " + response.data);
         
         },
                     function (response){

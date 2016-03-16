@@ -50,7 +50,12 @@ public class LoginController extends HttpServlet {
         System.out.println("We got a login POST from the Angular Frontend");
         String userName = request.getParameter("userName");
         String userPass = request.getParameter("userPass");
-        System.out.println("UserName:" + userName + " UserPass:" + userPass);
+        System.out.println("UserName: " + userName + " UserPass: " + userPass);
+        response.setStatus(200);
+        
+        response.setContentType("text/plain");
+           response.getWriter().print("UserName: " + userName + "userPass: " + userPass);
+        
     }
 
     /** 
