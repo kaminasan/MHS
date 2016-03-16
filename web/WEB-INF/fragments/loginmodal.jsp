@@ -16,10 +16,10 @@
                 <button class="close" data-dismiss="modal">X</button>
             </div>
             <div class="modal-body">
-                <form>
+                <form id="loginForm">
                 <div class="form-group">
-                Username:<input class="form-control" type="text" required>
-                Password:<input class="form-control" type="password" required>
+                Username:<input class="form-control" id="userName" type="text" name="userName" required>
+                Password:<input class="form-control" id="userPass" type="password" name="userPass" required>
                 <br>
                 <button class="btn btn-primary " type="submit" data-dismiss="modal">Submit</button>
             </div>
