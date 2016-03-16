@@ -13,13 +13,17 @@ LoginApp.controller('loginController', ['$scope', '$http',
         $scope.processLogin = function(){
             $http({
                 method: 'POST',
-                url: '/login',
+                url: 'login',
                 data: $scope.loginData,
                 headers: {'Content-Type' : 'application/x-www-form-urlencoded'}
-            }).success(function(data){
-                console.log(data);
-                location.reload();
-            });
+            }).then(function (response){
+                console.log("We succeeded!");
+            console.log(response);
+        
+        },
+                    function (response){
+                console.log("we FAILED"); });
+            
         };
         
 }]);

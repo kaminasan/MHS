@@ -11,12 +11,11 @@
 <html>
     <head><%@include file="/WEB-INF/headsection.jsp" %>
         <title>Minamata HS Home</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     </head>
 
     <body>
         <%@include file="/WEB-INF/fragments/navsection.jsp" %>
-        <div class="container-fluid" ng-app="">
+        <div class="container-fluid">
             <div id="jumbotronRow" class="container">
                    
                        
