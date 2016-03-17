@@ -6,7 +6,11 @@
 
 package com.mhs.controller;
 
+import com.kam.cms.SQL.DAO.UserDAO;
+import com.kam.cms.beans.UserBean;
+import com.kam.cms.validators.ParamValidator;
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -46,15 +50,37 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        ServletContext ctx = request.getServletContext(); 
-        System.out.println("We got a login POST from the Angular Frontend");
+         UserDAO dao = null;
+         UserBean user = null;
         String userName = request.getParameter("userName");
         String userPass = request.getParameter("userPass");
+        PrintWriter writer = response.getWriter();
+        request.setCharacterEncoding("UTF-8");
+        response.setStatus(401);
         System.out.println("UserName: " + userName + " UserPass: " + userPass);
-        response.setStatus(200);
+        if(ParamValidator.isEmpty(userName) || ParamValidator.isEmpty(userPass)){
+            writer.print("Error, missing parameters. Please Fill them in");
+            return ;
+        }
+        else{
+           dao = new UserDAO();
+           //production phase uncomment ** user = dao.getSpecificUser(userName, userPass);
+           if(userName.equalsIgnoreCase("test") && userPass.equalsIgnoreCase("test")){
+               user = new UserBean(1, "kaminasan", "Kameron", "Monte", "kaminazan@gmail.cm", userPass, 69);
+           }
+           if(user == null){
+               writer.print("Error! User Name or Password Incorrect.");
+               return;
+           }
+           
+           request.getSession().setAttribute("user", user);
+           response.setStatus(200);
+           response.setContentType("text/plain");
+           response.getWriter().print("Logged in user: " + user.toString());
         
-        response.setContentType("text/plain");
-           response.getWriter().print("UserName: " + userName + "userPass: " + userPass);
+        }
+        
+        
         
     }
 
