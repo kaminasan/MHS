@@ -15,9 +15,22 @@
     <body>
         
          <%@include file="/WEB-INF/fragments/navsection.jsp" %>
-         <div class="container-fluid"> 
-        <%--Content Goes HERE! --%>
-        <%--Content Ends Here! --%>
+         <div class="container-fluid">
+             <form>
+                 <div class="row">
+                        <div class="form-group col-lg-6">
+                            <label for="mainTitleImage">Add a main Image for your post!</label>
+                            <input id="mainTitleImage" type="file" name="mainTitleImage" accept="image/*" required>
+                            <div class="">Upload Status: <span id="fileStatus">No Image Selected</span></div>
+                        </div> 
+                        <div class="form-group col-lg-6">
+                            <label for="extraImages">Add Extra Images for your post!</label>
+                            <input id="extraImages" type="file" name="extraImages[]" accept="image/*" multiple>
+                           
+                        </div> 
+                 </div>
+             </form>
+             
         
          <%@include file="/WEB-INF/fragments/footer.jsp" %>
          
