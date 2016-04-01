@@ -14,7 +14,7 @@
                 <button class="close" data-dismiss="modal">X</button>
             </div>
             <div class="modal-body" >
-                <form id="loginForm" method="POST" action="/login?backPage=${backPage}" >
+                <form id="loginForm" method="POST" action="login?backPage=${backPage}" >
                 <div class="form-group">
                 Username:<input class="form-control" id="userName" type="text" name="userName" required>
                 Password:<input class="form-control" id="userPass" type="password" name="userPass"  required>
