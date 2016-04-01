@@ -13,15 +13,15 @@
                 <h2 class="modal-title">Login</h2>
                 <button class="close" data-dismiss="modal">X</button>
             </div>
-            <div class="modal-body" ng-app="LoginApp" ng-controller="loginController">
-                <form id="loginForm" ng-submit="processLogin()">
+            <div class="modal-body" >
+                <form id="loginForm" method="POST" action="/login?backPage=${backPage}" >
                 <div class="form-group">
-                Username:<input class="form-control" id="userName" type="text" name="userName" ng-model="loginData.userName" required>
-                Password:<input class="form-control" id="userPass" type="password" name="userPass" ng-model="loginData.userPass" required>
+                Username:<input class="form-control" id="userName" type="text" name="userName" required>
+                Password:<input class="form-control" id="userPass" type="password" name="userPass"  required>
                 <br>
                 <button class="btn btn-primary " type="submit">Submit</button>
             </div>
-                    {{loginMessage}}
+                  
                 </form>
         </div>
             <div class="modal-footer">

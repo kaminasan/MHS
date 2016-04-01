@@ -22,7 +22,7 @@ import javax.servlet.RequestDispatcher;
  *
  * @author KaminaSan <www.kaminasan.com>
  */
-@WebServlet(name="LoginController", urlPatterns={"/login"})
+@WebServlet(name="LoginController", urlPatterns={"/angularlogin"})
 public class LoginController extends HttpServlet {
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
