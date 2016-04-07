@@ -8,5 +8,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
  <div id="headerContainer" class="row">
-                <div id="callOut" class="jumbotron col-sm-12 col-md-12 col-lg-12 text-center">Minamata High School</div>
+                <div id="callOut" class="jumbotron col-sm-12 col-md-12 col-lg-12 text-center">Minamata Super Global High School</div>
             </div>

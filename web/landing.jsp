@@ -48,7 +48,7 @@
             <div id ="contentContainer" class='container'>
                 <div id="landing_box">
             <div id='header' class='row text-center'>
-                <header class='page-header'><h1>Minamata High School</h1></header>
+                <header class='page-header'><h1>Minamata Super Global High School</h1></header>
             </div>
             <div id ="landingZone" class='row text-center'>
                

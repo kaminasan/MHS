@@ -21,7 +21,7 @@
                             </ul>
                         </li>
                         <li><a href="<c:url value="/contact"></c:url>"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-                        <li><a href="#" class=""><span class="glyphicon glyphicon-globe"></span> International</a></li>
+                        <li><a href="#" class=""><span class="glyphicon glyphicon-globe"></span> Super Global HS</a></li>
                         <li><c:choose>
                                  <c:when test="${not empty user}"><a ng-app="LoginApp" ng-controller="LogoutController" ng-click="processLogout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></c:when>
                                 <c:otherwise><a href="#" data-toggle="modal" data-target="#loginModal"> <span class="glyphicon glyphicon-log-in"></span> Login</a></c:otherwise>

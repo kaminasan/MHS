@@ -20,7 +20,7 @@
                    
                        
                         <header id="theHeader" class="page-header text-center row">
-                            <h1>Minamata High School</h1>
+                            <h1>Minamata Super Global High School</h1>
                         </header>
                 <div class="overlay row">
                     
@@ -73,7 +73,15 @@
                     </div>
                 
                 
-         
+            <c:forEach items="${postList}" var="post">
+                <div class="postRow container">
+                <h3 class="page-header recentEventHeader" >Recent Events</h3>
+                <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 post">
+                    <div class=""><h3 class="page-header">${post.postTitle}</h3></div>
+                      <div class="col-xs-6 col-md-6"><img class="img-responsive" src="Images/post1.JPG"></div>
+                    <div class="col-xs-6 col-md-6 "><p>${post.postSummary}</p></div>
+            </c:forEach>
           
             <div class="postRow container">
                 <h3 class="page-header recentEventHeader" >Recent Events</h3>
