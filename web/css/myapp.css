@@ -94,6 +94,12 @@ textarea{
     background: rgba(42, 46, 47, 0.75);
     color:white;
 }
+
+#registrationSection{
+    background: rgba(42, 46, 47, 0.75);
+    color:white;
+}
+
 #homeLink:hover{
     background-color:#00cc00; 
 }
